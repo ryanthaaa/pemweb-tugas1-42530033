@@ -527,3 +527,73 @@ button:focus-visible {
     color: var(--text-main);
     cursor: pointer;
 }
+
+@media (max-width: 480px) {
+    .hero-section {
+        justify-content: flex-start;
+    }
+
+    .header-container {
+        flex-wrap: wrap;
+    }
+
+    .hero-title {
+        font-size: 1.5rem;
+    }
+
+    .hero-img {
+        max-width: 150px;
+    }
+
+    .btn-primary {
+        padding: 0.85rem 1rem;
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-img {
+        max-width: 190px;
+        margin-top: -70px;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-title {
+        font-size: 2.25rem;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+
+    .footer-socials {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .services-title {
+        font-size: 2.25rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
