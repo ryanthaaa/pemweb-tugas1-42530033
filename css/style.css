@@ -465,3 +465,65 @@ button:focus-visible {
     color: var(--text-main);
     opacity: 0.85;
 }
+
+/* Footer */
+.footer-web {
+    background-color: var(--bg-card);
+    /* Warna #0B2B26 dari Palet */
+    border-top: 1px solid var(--border-color);
+    padding: 3rem 0;
+    margin-top: auto;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.footer-logo {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.copyright-text {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+}
+
+/* Tautan Sosial */
+.footer-socials {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.social-label {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--text-main);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.social-list {
+    display: flex;
+    list-style: none;
+    gap: 1.25rem;
+}
+
+.social-link {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.social-link:hover {
+    color: var(--text-main);
+    cursor: pointer;
+}
