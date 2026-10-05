@@ -118,3 +118,64 @@ button:focus-visible {
     height: 2px;
     background-color: var(--text-muted);
 }
+
+/* Hero */
+.hero-section {
+    padding: 4rem 0 6rem 0;
+    background-color: var(--bg-main);
+}
+
+.hero-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 550px;
+}
+
+.hero-title {
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    color: var(--text-main);
+    margin-bottom: 2.5rem;
+    letter-spacing: -1px;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 0.85rem 2rem;
+    border: 1px solid var(--text-muted);
+    color: var(--text-main);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-accent);
+    border-color: var(--primary-accent);
+    color: var(--text-main);
+    cursor: pointer;
+}
+
+/* Area Gambar Hero */
+.hero-media {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.hero-img {
+    max-width: 280px;
+    margin-top: -80px;
+    object-fit: cover;
+    /* filter: grayscale(100%) contrast(110%); */
+}
