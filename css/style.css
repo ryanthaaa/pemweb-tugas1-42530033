@@ -250,3 +250,75 @@ button:focus-visible {
     color: var(--text-main);
     opacity: 0.9;
 }
+
+/* Service/About */
+.services-section {
+    padding: 5rem 0 8rem 0;
+    background-color: var(--bg-main);
+}
+
+.services-header {
+    margin-bottom: 3rem;
+}
+
+.services-title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--text-main);
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+}
+
+.services-subtitle {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.service-item {
+    background-color: var(--bg-card);
+    /* Warna #0B2B26 */
+    padding: 2.5rem 2rem;
+    border: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.service-item:hover {
+    background-color: var(--primary-accent);
+    border-color: var(--primary-accent);
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+
+.service-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.service-arrow {
+    color: var(--text-muted);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.service-arrow:hover,
+.service-item:hover .service-arrow {
+    color: var(--text-main);
+    transform: translateX(5px);
+    cursor: pointer;
+}
